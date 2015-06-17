@@ -46,7 +46,7 @@
 #pragma mark - helper methods
 -(void)downloadImages{
     NSURLSession * session=[NSURLSession sharedSession];
-    NSString *urlString=[[NSString alloc]initWithFormat:@"https://api.instagram.com/v1/tags/cats/media/recent?access_token=%@",self.accessToken];
+    NSString *urlString=[[NSString alloc]initWithFormat:@"https://api.instagram.com/v1/tags/horses/media/recent?access_token=%@",self.accessToken];
     NSURL *url=[[NSURL alloc]initWithString:urlString];
     NSURLRequest *request=[[NSURLRequest alloc]initWithURL:url];
     NSURLSessionDownloadTask *task=[session downloadTaskWithRequest:request completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
