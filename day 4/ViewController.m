@@ -13,6 +13,7 @@
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property(nonatomic) NSString *accessToken;
+@property(nonatomic) NSMutableArray *photos;
 @end
 
 @implementation ViewController
@@ -45,12 +46,16 @@
 #pragma mark - helper methods
 -(void)downloadImages{
     NSURLSession * session=[NSURLSession sharedSession];
-    NSString *urlString=[[NSString alloc]initWithFormat:@"https://api.instagram.com/v1/tags/Kazakhstan/media/recent?access_token=%@",self.accessToken];
+    NSString *urlString=[[NSString alloc]initWithFormat:@"https://api.instagram.com/v1/tags/cats/media/recent?access_token=%@",self.accessToken];
     NSURL *url=[[NSURL alloc]initWithString:urlString];
     NSURLRequest *request=[[NSURLRequest alloc]initWithURL:url];
     NSURLSessionDownloadTask *task=[session downloadTaskWithRequest:request completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
         NSData *data =[[NSData alloc]initWithContentsOfURL:location];
         NSDictionary *responseDictionary=[NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+        self.photos=responseDictionary[@"data"];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.collectionView reloadData];
+        });
     }];
     [task resume];
 }
@@ -59,12 +64,13 @@
     return 1;
 }
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 10;
+    return [self.photos count];
 }
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     PhotoCollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.imageView.image=[UIImage imageNamed:@"carimage.jpg"];
-    
+  //  cell.imageView.image=[UIImage imageNamed:@"carimage.jpg"];
+    NSDictionary *photo =self.photos[indexPath.row];
+    cell.photo=photo;
     return cell;
 }
 @end
