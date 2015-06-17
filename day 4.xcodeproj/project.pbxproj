@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F733E0C1B3185CD00B0885D /* PhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F733E0B1B3185CD00B0885D /* PhotoController.m */; };
+		3F733E0F1B318FCB00B0885D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F733E0E1B318FCB00B0885D /* DetailViewController.m */; };
 		3FD0A2721B314D8500DDD65D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0A2711B314D8500DDD65D /* main.m */; };
 		3FD0A2751B314D8500DDD65D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0A2741B314D8500DDD65D /* AppDelegate.m */; };
 		3FD0A2781B314D8500DDD65D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0A2771B314D8500DDD65D /* ViewController.m */; };
@@ -35,6 +36,8 @@
 		141FAE56860E4EF71B7CEB21 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3F733E0A1B3185CD00B0885D /* PhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoController.h; sourceTree = "<group>"; };
 		3F733E0B1B3185CD00B0885D /* PhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoController.m; sourceTree = "<group>"; };
+		3F733E0D1B318FCB00B0885D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3F733E0E1B318FCB00B0885D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		3FD0A26C1B314D8500DDD65D /* day 4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "day 4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD0A2701B314D8500DDD65D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FD0A2711B314D8500DDD65D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				3FD0A2981B314E8600DDD65D /* PhotoCollectionViewCell.m */,
 				3FD0A2761B314D8500DDD65D /* ViewController.h */,
 				3FD0A2771B314D8500DDD65D /* ViewController.m */,
+				3F733E0D1B318FCB00B0885D /* DetailViewController.h */,
+				3F733E0E1B318FCB00B0885D /* DetailViewController.m */,
 				3F733E0A1B3185CD00B0885D /* PhotoController.h */,
 				3F733E0B1B3185CD00B0885D /* PhotoController.m */,
 				3FD0A2791B314D8500DDD65D /* Main.storyboard */,
@@ -297,6 +302,7 @@
 				3FD0A2751B314D8500DDD65D /* AppDelegate.m in Sources */,
 				3FD0A2721B314D8500DDD65D /* main.m in Sources */,
 				3F733E0C1B3185CD00B0885D /* PhotoController.m in Sources */,
+				3F733E0F1B318FCB00B0885D /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
