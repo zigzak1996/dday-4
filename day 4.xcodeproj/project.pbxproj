@@ -18,6 +18,8 @@
 		3FD0A28C1B314D8500DDD65D /* day_4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0A28B1B314D8500DDD65D /* day_4Tests.m */; };
 		3FD0A2961B314E3B00DDD65D /* carimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FD0A2951B314E3B00DDD65D /* carimage.jpg */; };
 		3FD0A2991B314E8600DDD65D /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0A2981B314E8600DDD65D /* PhotoCollectionViewCell.m */; };
+		3FE56B221B328C470028E52E /* PresentDetailTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE56B211B328C470028E52E /* PresentDetailTransition.m */; };
+		3FE56B251B328F3E0028E52E /* dismissDetailTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE56B241B328F3E0028E52E /* dismissDetailTransition.m */; };
 		78E8DCAE59984873487C7FAE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 094A0726D853DA14D5994D9B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,10 @@
 		3FD0A2951B314E3B00DDD65D /* carimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carimage.jpg; sourceTree = "<group>"; };
 		3FD0A2971B314E8600DDD65D /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		3FD0A2981B314E8600DDD65D /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		3FE56B201B328C470028E52E /* PresentDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentDetailTransition.h; sourceTree = "<group>"; };
+		3FE56B211B328C470028E52E /* PresentDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentDetailTransition.m; sourceTree = "<group>"; };
+		3FE56B231B328F3E0028E52E /* dismissDetailTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dismissDetailTransition.h; sourceTree = "<group>"; };
+		3FE56B241B328F3E0028E52E /* dismissDetailTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dismissDetailTransition.m; sourceTree = "<group>"; };
 		916591A13EC274234D477661 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,8 +119,12 @@
 				3FD0A2981B314E8600DDD65D /* PhotoCollectionViewCell.m */,
 				3FD0A2761B314D8500DDD65D /* ViewController.h */,
 				3FD0A2771B314D8500DDD65D /* ViewController.m */,
+				3FE56B231B328F3E0028E52E /* dismissDetailTransition.h */,
+				3FE56B241B328F3E0028E52E /* dismissDetailTransition.m */,
 				3F733E0D1B318FCB00B0885D /* DetailViewController.h */,
 				3F733E0E1B318FCB00B0885D /* DetailViewController.m */,
+				3FE56B201B328C470028E52E /* PresentDetailTransition.h */,
+				3FE56B211B328C470028E52E /* PresentDetailTransition.m */,
 				3F733E0A1B3185CD00B0885D /* PhotoController.h */,
 				3F733E0B1B3185CD00B0885D /* PhotoController.m */,
 				3FD0A2791B314D8500DDD65D /* Main.storyboard */,
@@ -301,7 +311,9 @@
 				3FD0A2991B314E8600DDD65D /* PhotoCollectionViewCell.m in Sources */,
 				3FD0A2751B314D8500DDD65D /* AppDelegate.m in Sources */,
 				3FD0A2721B314D8500DDD65D /* main.m in Sources */,
+				3FE56B221B328C470028E52E /* PresentDetailTransition.m in Sources */,
 				3F733E0C1B3185CD00B0885D /* PhotoController.m in Sources */,
+				3FE56B251B328F3E0028E52E /* dismissDetailTransition.m in Sources */,
 				3F733E0F1B318FCB00B0885D /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
